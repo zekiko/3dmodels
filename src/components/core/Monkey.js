@@ -10,7 +10,10 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/monkey.glb')
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Suzanne.geometry} material={materials['Material.001']} scale={[100, 100, 100]} />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Suzanne.geometry} material={materials['Material.001']} scale={[100, 100, 100]} />
     </group>
   )
 }

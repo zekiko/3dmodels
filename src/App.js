@@ -7,8 +7,8 @@ function App() {
   return (
     <main className="App">
 
-      <div>
-        <div>
+      <section className="Fours">
+        <div className>
           <MonkeyThree />
         </div>
         <div>
@@ -20,9 +20,9 @@ function App() {
         <div>
           <AirbusA310Three />
         </div>
-      </div>
+      </section>
 
-      <div>
+      <section className="Fours">
         <div>
           <AirbusA310Three />
         </div>
@@ -35,8 +35,8 @@ function App() {
         <div>
           <AirbusA310Three />
         </div>
-      </div>
-      
+      </section>
+
     </main>
   );
 }

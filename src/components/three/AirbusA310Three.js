@@ -1,24 +1,20 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Stars, Line, QuadraticBezierLine } from '@react-three/drei'
+import { OrbitControls, Stage } from '@react-three/drei'
 import AirbusA310 from "../core/AirbusA310"
 
 function App() {
-  return (
-        <Canvas camera={{
-          position: [5, 5, 5]
-        }}
-          pixelRatio={window.devicePixelRatio}
-        >
-          <ambientLight intensity={0.5} />
-          <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-          <pointLight position={[-10, -10, -10]} />
-          <OrbitControls />
-          <Suspense fallback={null}>
-            <AirbusA310 scale={[0.3, 0.3, 0.3]}/>
-          </Suspense>
+    const ref = useRef()
+    return (
+        <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
+            <Suspense fallback={null}>
+                <Stage controls={ref} contactShadow shadows adjustCamera environment="city">
+                    <AirbusA310 />
+                </Stage>
+            </Suspense>
+            <OrbitControls ref={ref} autoRotate />
         </Canvas>
-  );
+    );
 }
 
 export default App;

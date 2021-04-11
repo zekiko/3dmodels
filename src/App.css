@@ -19,14 +19,20 @@ main {
   height: 100vh;
   width: 100%;
   background-color: aqua;
+  overflow: hidden;
 }
 
 div{
-  margin-bottom: 10px;
   height: 50vh;
   width: 50vh;
   background-color: burlywood;
-  
+}
+
+.Fours{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 

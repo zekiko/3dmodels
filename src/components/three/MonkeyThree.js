@@ -1,22 +1,18 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, Stage } from '@react-three/drei'
 import Monkey from "../core/Monkey"
  
 function App() {
+    const ref = useRef()
     return (
-        <Canvas camera={{
-            position: [5, 5, 5]
-        }}
-            pixelRatio={window.devicePixelRatio}
-        >
-            <ambientLight intensity={0.5} />
-            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-            <pointLight position={[-10, -10, -10]} />
-            <OrbitControls />
+        <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
             <Suspense fallback={null}>
-                <Monkey scale={[0.03, 0.03, 0.03]} />
+                <Stage controls={ref} contactShadow shadows adjustCamera environment="city">
+                    <Monkey />
+                </Stage>
             </Suspense>
+            <OrbitControls ref={ref} autoRotate />
         </Canvas>
     );
 }

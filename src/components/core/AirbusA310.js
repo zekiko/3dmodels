@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/Airbus-A310.glb')
+  const { nodes, materials } = useGLTF('/AirbusA310.glb')
   return (
     <group ref={group} {...props} dispose={null}>
       <group position={[0, 0.16, -1.7]} rotation={[1.7, 0, 0]}>
@@ -24,4 +24,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/Airbus-A310.glb')
+useGLTF.preload('/AirbusA310.glb')

@@ -13,7 +13,7 @@ function App() {
     <main className="App">
 
       <section className="Fours">
-        <div className>
+        <div>
           <MonkeyThree />
         </div>
         <div>

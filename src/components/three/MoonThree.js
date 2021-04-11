@@ -9,7 +9,7 @@ export default function Viewer() {
   return (
     <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
       <Suspense fallback={null}>
-        <Stage controls={ref} contactShadow shadows adjustCamera environment="city">
+        <Stage controls={ref} contactShadow shadows adjustCamera environment="apartment">
           <Moon />
         </Stage>
       </Suspense>

@@ -2,6 +2,7 @@ import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Stars, Line, QuadraticBezierLine } from '@react-three/drei'
 import Monkey from "./components/Monkey"
+import Earth from "./components/Earth"
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <OrbitControls />
       <Suspense fallback={null}>
         <Monkey />
+        <Earth />
       </Suspense>
     </Canvas>
   );

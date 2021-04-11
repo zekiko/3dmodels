@@ -4,6 +4,7 @@ import EarthThree from "./components/three/EarthThree"
 import AirbusA310Three from "./components/three/AirbusA310Three"
 import GEO2Three from "./components/three/GEO2Three"
 import SpaceShuttelThree from "./components/three/SpaceShuttelThree"
+import Turksat6AThree from "./components/three/Turksat6AThree"
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           <SpaceShuttelThree />
         </div>
         <div>
-          <AirbusA310Three />
+          <Turksat6AThree />
         </div>
         <div>
           <AirbusA310Three />

@@ -8,7 +8,7 @@ import Turksat6AThree from "./components/three/Turksat6AThree"
 import MoonThree from "./components/three/MoonThree"
 import SunThree from "./components/three/SunThree"
 
-import gif from './monkey6.gif'
+import gif from './gifs/monkey6.gif'
 
 
 function App() {

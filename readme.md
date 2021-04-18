@@ -5,4 +5,6 @@
   <img src="src/gifs/Turksat-6A.gif" alt="animated" width="275"/>
   <img src="src/gifs/Turksat-6A-2.gif" alt="animated" width="275"/>
   <img src="src/gifs/SpaceShuttel2.gif" alt="animated" width="275"/>
+    <img src="src/gifs/earth.gif" alt="animated" width="275"/>
+
 </p>

@@ -8,7 +8,7 @@ import Turksat6AThree from "./components/three/Turksat6AThree"
 import MoonThree from "./components/three/MoonThree"
 import SunThree from "./components/three/SunThree"
 
-import gif from './monkey5.gif'
+import gif from './monkey6.gif'
 
 
 function App() {
@@ -16,18 +16,10 @@ function App() {
     <main className="App">
 
 
-      <div>
+      <div style={{width: "500px", height:"500px"}}>
         <img src={gif} alt="loading..." />
       </div>
-      <div>
-        <img src={gif} alt="loading..." />
-      </div>
-      <div>
-        <img src={gif} alt="loading..." />
-      </div>
-      <div>
-        <img src={gif} alt="loading..." />
-      </div>
+    
 
     </main>
   );

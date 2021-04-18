@@ -13,3 +13,11 @@
   <img src="src/monkey6.gif" alt="animated" width="274"/>
   <img src="src/monkey6.gif" alt="animated" width="274"/>
 </p>
+
+<p align="center">
+  <img src="src/monkey7.gif" alt="animated" width="274"/>
+  <img src="src/monkey7.gif" alt="animated" width="274"/>
+  <img src="src/monkey7.gif" alt="animated" width="274"/>
+  <img src="src/monkey7.gif" alt="animated" width="274"/>
+  <img src="src/monkey7.gif" alt="animated" width="274"/>
+</p>

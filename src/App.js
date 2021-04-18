@@ -12,36 +12,11 @@ function App() {
   return (
     <main className="App">
 
-      <section className="Fours">
+       
         <div>
           <MonkeyThree />
         </div>
-        <div>
-          <EarthThree />
-        </div>
-        <div>
-          <AirbusA310Three />
-        </div>
-        <div>
-          <GEO2Three />
-        </div>
-      </section>
-
-      <section className="Fours">
-        <div>
-          <SpaceShuttelThree />
-        </div>
-        <div>
-          <Turksat6AThree />
-        </div>
-        <div>
-          <MoonThree />
-        </div>
-        <div>
-          <SunThree />
-        </div>
-      </section>
-
+         
     </main>
   );
 }

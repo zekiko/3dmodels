@@ -5,6 +5,7 @@ import Monkey from "../core/Monkey"
  
 function App() {
     const ref = useRef()
+    
     return (
         <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
             <Suspense fallback={null}>
@@ -12,7 +13,7 @@ function App() {
                     <Monkey />
                 </Stage>
             </Suspense>
-            <OrbitControls ref={ref} autoRotate />
+            <OrbitControls ref={ref} autoRotate autoRotateSpeed={10}/>
         </Canvas>
     );
 }

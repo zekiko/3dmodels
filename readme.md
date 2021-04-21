@@ -7,4 +7,5 @@
     <img src="src/gifs/SpaceShuttel2.gif" alt="animated" width="275"/>
     <img src="src/gifs/earth.gif" alt="animated" width="275"/>
     <img src="src/gifs/moon.gif" alt="animated" width="275"/>
+    <img src="src/gifs/heart.gif" alt="animated" height="173" width="275"/>
 </p>

@@ -10,4 +10,10 @@
     <img src="src/gifs/heart.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/cone.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/conewhite.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/cube.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/hearthwhite.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/dentrite.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/funnygun.gif" alt="animated" height="173" width="275"/>
+
+
 </p>

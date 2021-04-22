@@ -8,4 +8,5 @@
     <img src="src/gifs/earth.gif" alt="animated" width="275"/>
     <img src="src/gifs/moon.gif" alt="animated" width="275"/>
     <img src="src/gifs/heart.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/cone.gif" alt="animated" height="173" width="275"/>
 </p>

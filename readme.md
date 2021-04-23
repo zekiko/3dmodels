@@ -17,7 +17,11 @@
     <img src="src/gifs/dentrite.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/funnygun.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/orb.gif" alt="animated" height="173" width="275"/>
-    
+    <img src="src/gifs/sphere.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/squarepyramid.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/torus.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/trianglepyramid.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/worm.gif" alt="animated" height="173" width="275"/>
 
 
 </p>

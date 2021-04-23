@@ -8,9 +8,7 @@
     <img src="src/gifs/earth.gif" alt="animated" width="275"/>
     <img src="src/gifs/moon.gif" alt="animated" width="275"/>
     <img src="src/gifs/heart.gif" alt="animated" height="173" width="275"/>
-    <img src="src/gifs/cone.gif" alt="animated" height="173" width="275"/>
-    <img src="src/gifs/conewhite.gif" alt="animated" height="173" width="275"/>
-    <img src="src/gifs/cube.gif" alt="animated" height="173" width="275"/>
+    
     <img src="src/gifs/hearthwhite.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/heart2.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/hearth3.gif" alt="animated" height="173" width="275"/>
@@ -22,6 +20,9 @@
     <img src="src/gifs/torus.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/trianglepyramid.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/worm.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/cone.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/conewhite.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/cube.gif" alt="animated" height="173" width="275"/>
 
 
 </p>

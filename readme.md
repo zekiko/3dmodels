@@ -9,6 +9,7 @@
     <img src="src/gifs/moon.gif" alt="animated" width="275"/>
     <img src="src/gifs/heart.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/hearthwhite.gif" alt="animated" height="173" width="275"/>
+    <img src="src/gifs/hearthblack.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/heart2.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/hearth3.gif" alt="animated" height="173" width="275"/>
     <img src="src/gifs/dentrite.gif" alt="animated" height="173" width="275"/>

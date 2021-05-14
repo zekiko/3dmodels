@@ -1,21 +1,30 @@
+ * {   
+  box-sizing: border-box;
+
+ }
+ html, body {overflow-x:hidden; }
+
  main{
-  height: 400vh; 
+  height: 450vh; 
   background: rgb(5, 5, 5);
+   
  }
  .nav-bar {
     width: 100%;
-    background-color: transparent;
-    color: rgb(212, 214, 193);
+    background-color: rgba(255, 255, 255, 0.856);
+    backdrop-filter: blur(1.5rem);
+    color: rgba(5, 5, 1, 0.801);
     position: fixed;
     top: 0;
     display: flex;
-    z-index: 1;
-    transition: top 0.4s;
+    z-index: 2;
+    transition: background-color 1.7s, color 1.1s;
   }
 
   .nav-bar--hidden {
-    background-color: rgb(255, 255, 255);
-    color: rgba(5, 5, 1, 0.801);
+    background-color: transparent;
+    backdrop-filter: blur(0rem);
+    color: rgb(212, 214, 193);
   }
 
   .nav-bar ul {
@@ -61,7 +70,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-   
+  overflow-x: clip; /* not sure */
+    
 }
 .hearts-div img{
     width: 400px;
@@ -71,3 +81,24 @@
      
 }
 
+.anime {
+  opacity: 0;
+		-webkit-transform: translateX(-40px);
+			 -moz-transform: translateX(-40px);
+				-ms-transform: translateX(-40px);
+				 -o-transform: translateX(-40px);
+						transform: translateX(100%) rotateY(1turn);
+		-webkit-transition: all 0.6s ease-out;
+			 -moz-transition: all 0.6s ease-out;
+				-ms-transition: all 0.6s ease-out;
+				 -o-transition: all 0.6s ease-out;
+						transition: all 0.6s ease-out;
+ }
+.anime-ontoggle {
+  opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+}

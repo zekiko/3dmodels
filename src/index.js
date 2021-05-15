@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 
-import Parallax from "./Parallax2"
+import Parallax from "./Parallax"
 ReactDOM.render(
   <React.StrictMode>
        <Parallax />

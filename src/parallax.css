@@ -11,7 +11,7 @@
  }
  .nav-bar {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(255, 255, 255, 0.93);
     backdrop-filter: blur(1.5rem);
     color: rgba(5, 5, 1, 0.801);
     position: fixed;
@@ -39,8 +39,6 @@
     font-size: 17px;
     font-family: gingerRegular, sans-serif;
     font-weight: bold;
-     
-     
   }
 
   .banner {
@@ -48,7 +46,7 @@
     background: rgb(235, 225, 225);
     color:rgba(240, 239, 230, 0.705);
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 .banner img {
@@ -74,11 +72,10 @@
     
 }
 .hearts-div img{
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-    background-color: transparent;
-     
+  width: 90%;
+  height: auto;
+  margin: 10px;
+  background-color: transparent;     
 }
 
 .anime {
@@ -102,3 +99,22 @@
 				 -o-transform: none;
 						transform: none;
 }
+
+@media screen and (max-width: 700px) {
+  .hearts-div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1250px){
+  .hearts-div img{
+    width: 300px;
+   }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1500px){
+  .hearts-div img{
+    width: 400px;
+   }
+}
+ 

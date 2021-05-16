@@ -134,7 +134,7 @@ export default function Web() {
 
             <div className="animation-2">
                 <Controller>
-                    <Scene triggerHook="onCenter" duration={500} classToggle="anime-ontoggle" indicators={true}>
+                    <Scene triggerHook="onCenter" duration={500} classToggle="anime-ontoggle" indicators={false}>
                         {
                             (progress, event) => {
                                 //console.log(event)

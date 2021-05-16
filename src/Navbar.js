@@ -7,6 +7,8 @@ import "aos/dist/aos.css" //to animation on scroll - css
 import Fade from 'react-reveal/Fade';
 
 import "./parallax.css"
+import heart1 from './images/png/heart1.png'
+import heart2 from './images/png/heart2.png'
  
 const Navbar = () => {
     const [visible, setVisible] = React.useState(false)
@@ -35,8 +37,8 @@ const Navbar = () => {
             className={clsx("nav-bar", {
                 "nav-bar--hidden": !visible
             })}
-            onScroll={handleScroll}
-        >
+         >
+            <img className="a" src={visible ? heart1 : heart2} alt=""/>
              <ul>
                 <li>Technology</li>
                 <li>Design</li>

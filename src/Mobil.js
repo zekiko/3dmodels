@@ -7,6 +7,8 @@ import "aos/dist/aos.css" //to animation on scroll - css
 import Fade from 'react-reveal/Fade';
 
 import "./parallax.css"
+import Navbar from "./Navbar"
+
 
 import heart1 from './images/png/heart1.png'
 import heart2 from './images/png/heart2.png'
@@ -30,24 +32,25 @@ export default function Parallax() {
 
     return (
         <main className="App">
-             <div className="banner">
+            <Navbar />
+            <div className="banner">
                 <img src="world.png" alt="" className="world" />
                 <Controller>
-                    <Scene triggerHook="onCenter" duration={30000}>
-                        <Tween from={{ yPercent: 10, scale: 1, opacity: 1 }} to={{ yPercent: -3000, scaleX: 5, scaleY: 20, opacity: -40, color: "red" }} /* ease="back.out(1.7)" */>
-                            <h2 className="main-title">Explore.</h2>
+                    <Scene triggerHook="onCenter" duration={10000}>
+                        <Tween from={{ yPercent: 0, scale: 1, opacity: 1 }} to={{ yPercent: -350, scaleX: 1.1, scaleY: 0, opacity: -4, color: "white" }} >
+                            <h1 className="main-title">Explore.</h1>
                         </Tween>
                     </Scene>
 
                     <Scene triggerHook="onCenter" duration={1000}>
-                        <Tween from={{ xPercent: 0, yPercent: 0 }} to={{ xPercent: 0, yPercent: 0, rotation: 90 }} /* ease="back.out(1.7)" */>
+                        <Tween from={{ xPercent: 0, yPercent: 0 }} to={{ xPercent: 0, yPercent: -300, rotation: 90 }} >
                             <img src={spaceshuttel} alt="" style={{ width: 125, height: 125, background: "transparent" }} />
                         </Tween>
                     </Scene>
                 </Controller>
             </div>
 
-            <div className="hearts-div">
+            <div className="animation-1">
                 <img src={heart2} alt="" />
                 <img src={heart1} alt="" />
                 <img src={heart3} alt="" />
@@ -59,6 +62,8 @@ export default function Parallax() {
                 <img src={earth} alt="" />
                 <img src={monkey} alt="" />
                 <img src={gun} alt="" />
+                <img src={monkey} alt="" />
+
             </div>
 
             <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>

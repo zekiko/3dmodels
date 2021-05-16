@@ -37,7 +37,7 @@ const Navbar = () => {
             })}
             onScroll={handleScroll}
         >
-            <ul>
+             <ul>
                 <li>Technology</li>
                 <li>Design</li>
                 <li>About</li>

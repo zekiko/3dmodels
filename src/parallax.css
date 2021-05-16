@@ -2,13 +2,14 @@
   box-sizing: border-box;
 
  }
- html, body {overflow-x:hidden; }
+html, body {
+  overflow-x:hidden; 
+  background:rgb(2, 2, 2);
+
+}
 
  main{
-  height: 450vh; 
-  background: rgb(5, 5, 5);
-   
- }
+   }
  .nav-bar {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.93);
@@ -18,7 +19,7 @@
     top: 0;
     display: flex;
     z-index: 2;
-    transition: background-color 1.7s, color 1.1s;
+    transition: background-color 1s, color 1.1s;
   }
 
   .nav-bar--hidden {
@@ -60,15 +61,31 @@
     top: 30%;
     left: 45%;
     font-size: 6rem;
-    transform: translate(-30%, 40%);
+    transform: translate(-30%, -50%);
     color: rgb(255, 255, 255);
+}
+
+.animation-1{
+  overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.animation-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .hearts-div {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  overflow-x: clip; /* not sure */
+  /* overflow-x: clip;  not sure */
     
 }
 .hearts-div img{
@@ -100,9 +117,16 @@
 						transform: none;
 }
 
+/* mobile */
 @media screen and (max-width: 700px) {
-  .hearts-div {
-    flex-direction: column;
+  .main-title {
+    font-size: 4rem;
+    top: 35%;
+    left: 45%;
+  }  
+
+  .animation-1 img{
+    width: 90%;
   }
 }
 

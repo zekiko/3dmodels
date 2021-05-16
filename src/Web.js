@@ -7,6 +7,8 @@ import "aos/dist/aos.css" //to animation on scroll - css
 import Fade from 'react-reveal/Fade';
 
 import "./parallax.css"
+import Navbar from "./Navbar"
+
 
 import heart1 from './images/png/heart1.png'
 import heart2 from './images/png/heart2.png'
@@ -29,24 +31,25 @@ export default function Web() {
 
     return (
         <main className="App">
-             <div className="banner">
+            <Navbar />
+            <div className="banner">
                 <img src="world.png" alt="" className="world" />
                 <Controller>
-                    <Scene triggerHook="onCenter" duration={2000}>
-                        <Tween from={{ yPercent: 10, scale: 1, opacity: 1 }} to={{ yPercent: -300, scaleX: 50, scaleY: 40, opacity: 4, color: "red" }} /* ease="back.out(1.7)" */>
-                            <h2 className="main-title">Explore.</h2>
-                        </Tween>
-                    </Scene>
+                         <Scene triggerHook="onCenter" duration={2000}>
+                            <Tween from={{ yPercent: 0, scale: 1, opacity: 1 }} to={{ yPercent: -350, scaleX: 1.1, scaleY: 0, opacity: -4, color: "white" }}>
+                                <h2 className="main-title">Explore.</h2>
+                            </Tween>
+                        </Scene>
 
-                    <Scene triggerHook="onCenter" duration={1000}>
-                        <Tween from={{ xPercent: 0, yPercent: 0 }} to={{ xPercent: 0, yPercent: 0, rotation: 90 }} /* ease="back.out(1.7)" */>
-                            <img src={spaceshuttel} alt="" style={{ width: 125, height: 125, background: "transparent" }} />
-                        </Tween>
-                    </Scene>
-                </Controller>
+                        <Scene triggerHook="onCenter" duration={1000}>
+                            <Tween from={{ xPercent: 0, yPercent: 0 }} to={{ xPercent: 0, yPercent: 0, rotation: 90 }} >
+                                <img src={spaceshuttel} alt="" style={{ width: 125, height: 125, background: "transparent" }} />
+                            </Tween>
+                        </Scene>
+                 </Controller>
             </div>
 
-            <div>
+            <div className="animation-1">
                 <Controller>
                     <div className="hearts-div">
                         <Scene triggerHook="onCenter" duration={500}>
@@ -122,7 +125,7 @@ export default function Web() {
                 </Controller>
             </div>
 
-            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+            <div className="animation-2">
                 <Controller>
                     <Scene triggerHook="onCenter" duration={500} classToggle="anime-ontoggle" indicators={true}>
                         {

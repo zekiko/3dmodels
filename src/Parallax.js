@@ -29,8 +29,7 @@ export default function Parallax() {
     console.log("isMobile: ", isMobile)
     return (
         <>
-            <Navbar />
-            {isMobile ?
+             {isMobile ?
                 <Mobil />
                 :
                 <Web />

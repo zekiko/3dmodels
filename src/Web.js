@@ -22,31 +22,38 @@ import monkey from './images/png/monkey.png'
 import thy from './images/png/thy.png'
 import gun from './images/png/gun.png'
 
+import useWindowSize from "./UseWindowSize"
+
 export default function Web() {
+
+    const [width, height] = useWindowSize();
+
     React.useEffect(() => {
         AOS.init({
             //duration: 2000
         });
     }, []);
-
+    console.log(typeof width / 125, width / 125, typeof width, Math.floor(width / 125))
     return (
         <main className="App">
             <Navbar />
             <div className="banner">
                 <img src="world.png" alt="" className="world" />
                 <Controller>
-                         <Scene triggerHook="onCenter" duration={2000}>
-                            <Tween from={{ yPercent: 0, scale: 1, opacity: 1 }} to={{ yPercent: -350, scaleX: 1.1, scaleY: 0, opacity: -4, color: "white" }}>
-                                <h2 className="main-title">Explore.</h2>
-                            </Tween>
-                        </Scene>
+                    <Scene triggerHook="onCenter" duration={2000}>
+                        <Tween from={{ yPercent: 0, scale: 1, opacity: 1 }} to={{ yPercent: -350, scaleX: 1.1, scaleY: 0, opacity: -4, color: "white" }}>
+                            <h2 className="main-title">Explore.</h2>
+                        </Tween>
+                    </Scene>
+                </Controller>
 
-                        <Scene triggerHook="onCenter" duration={1000}>
-                            <Tween from={{ xPercent: 0, yPercent: 0 }} to={{ xPercent: 0, yPercent: 0, rotation: 90 }} >
-                                <img src={spaceshuttel} alt="" style={{ width: 125, height: 125, background: "transparent" }} />
-                            </Tween>
-                        </Scene>
-                 </Controller>
+                <Controller>
+                    <Scene triggerHook="onCenter" duration={1000}>
+                        <Tween from={{ xPercent: 0, yPercent: 0 }} to={{ xPercent: Math.floor(width / 125 - 1) * 100, yPercent: -(Math.floor(height / 125 - 1) * 100), rotation: 90 }} >
+                            <img className="shuttel" src={spaceshuttel} alt="" />
+                        </Tween>
+                    </Scene>
+                </Controller>
             </div>
 
             <div className="animation-1">
@@ -143,7 +150,6 @@ export default function Web() {
             {/* <div style={{ display: "flex", justifyContent: "center", background: "" }} data-aos="fade-left">
     <img src={heart1} alt="" data-aos={"flip-left"} data-aos-duration="500" style={{ width: "", height: "" }} />
 </div> */}
-
         </main >
 
 

@@ -22,7 +22,11 @@ import monkey from './images/png/monkey.png'
 import thy from './images/png/thy.png'
 import gun from './images/png/gun.png'
 
+import useWindowSize from "./UseWindowSize"
+
 export default function Parallax() {
+    const [width, height] = useWindowSize();
+
 
     React.useEffect(() => {
         AOS.init({
@@ -43,42 +47,108 @@ export default function Parallax() {
                     </Scene>
 
                     <Scene triggerHook="onCenter" duration={1000}>
-                        <Tween from={{ xPercent: 0, yPercent: 0 }} to={{ xPercent: 0, yPercent: -300, rotation: 90 }} >
-                            <img src={spaceshuttel} alt="" style={{ width: 125, height: 125, background: "transparent" }} />
+                        <Tween from={{ xPercent: 0, yPercent: 0 }} to={{ xPercent: Math.floor(width / 125 - 1) * 100, yPercent: -(Math.floor(height / 125 - 1) * 100), rotation: 90 }} >
+                            <img className="shuttel" src={spaceshuttel} alt="" />
                         </Tween>
                     </Scene>
                 </Controller>
             </div>
 
             <div className="animation-1">
-                <img src={heart2} alt="" />
-                <img src={heart1} alt="" />
-                <img src={heart3} alt="" />
-                <img src={geo} alt="" />
-                <img src={spaceshuttel} alt="" />
-                <img src={turksat6a} alt="" />
-                <img src={moon} alt="" />
-                <img src={thy} alt="" />
-                <img src={earth} alt="" />
-                <img src={monkey} alt="" />
-                <img src={gun} alt="" />
-                <img src={monkey} alt="" />
-
-            </div>
-
-            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
                 <Controller>
-                    <Scene triggerHook="onCenter" duration={500} classToggle="anime-ontoggle" indicators={true}>
-                        {
-                            (progress, event) => {
-                                //console.log(event)
-                                return (
-                                    <img className="anime" src={heart1} alt="" />
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: 100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={heart2} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: -100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={heart1} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: 100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={heart3} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
 
-                                )
-                            }}
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: 100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={geo} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: -100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={spaceshuttel} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: 100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={turksat6a} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: 100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={moon} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: -100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={thy} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: 100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={earth} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: 100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={monkey} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: -100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={gun} alt="" />
+                            </div>
+                        </Tween>
+                    </Scene>
+                    <Scene triggerHook="onCenter" duration={200}>
+                        <Tween from={{ xPercent: 100, yPercent: 0, opacity: 1 }} to={{ xPercent: 0, yPercent: 0, rotationY: 0, opacity: 1 }} >
+                            <div>
+                                <img src={monkey} alt="" />
+                            </div>
+                        </Tween>
                     </Scene>
                 </Controller>
+            </div>
+
+
+            <div className="rotating-div" >
+                <img className="rotating-img" src={heart1} alt=""/>
             </div>
         </main >
 

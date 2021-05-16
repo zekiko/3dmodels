@@ -38,7 +38,7 @@ const Navbar = () => {
                 "nav-bar--hidden": !visible
             })}
          >
-            <img className="a" src={visible ? heart1 : heart2} alt=""/>
+            <img src={visible ? heart1 : heart2} alt=""/>
              <ul>
                 <li>Technology</li>
                 <li>Design</li>
